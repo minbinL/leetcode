@@ -12,7 +12,7 @@ public:
     string longestCommonPrefix(vector<string>& strs) {
         int len = strs.size();
         if (len == 0) {
-            return string();
+            return 0;
         }
         int minlen = INT_MAX;
         for (int i = 0; i < len; i++) {
@@ -32,7 +32,7 @@ public:
             }
         }
 
-        string longestPrefix = strs[0].substr(0, (unsigned int)i);
+        string longestPrefix = strs[0].substr(0, i);
         return longestPrefix;
     }
 };

@@ -17,7 +17,7 @@ public:
     int longestValidParentheses(string s) {
         int len = s.length();
         stack<int> stk;
-        vector<bool> dp(len, false);
+        vector<bool> dp((unsigned long long)len, false);
         for (int i = 0; i < len; i++) {
             if (s[i] == '(') {
                 stk.push(i);

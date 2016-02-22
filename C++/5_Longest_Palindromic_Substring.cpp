@@ -44,7 +44,7 @@ public:
                 right = res[1];
             }
         }
-        return s.substr((unsigned int)left, (unsigned int)right - (unsigned int)left + 1);
+        return s.substr(left, right - left + 1);
     }
 };
 

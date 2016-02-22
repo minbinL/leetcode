@@ -17,7 +17,7 @@ class Solution {
 public:
     string countAndSay(int n) {
         if (n <= 0) {
-            return string();
+            return 0;
         } else if (n == 1) {
             return string(1, '1');
         }
@@ -30,14 +30,14 @@ public:
             for (int i = 1; i < s.length(); i++) {
                 if (s[i]-'0' != record) {
                     temp += to_string(cnt);
-                    temp += string(1, record + '0');
+                    temp += string(1, (char)(record + '0'));
                     record = s[i]-'0', cnt = 1;
                 } else {
                     cnt++;
                 }
             }
             temp += to_string(cnt);
-            temp += string(1, record + '0');
+            temp += string(1, (char)(record + '0'));
             s = temp;
         }
         return s;

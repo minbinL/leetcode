@@ -20,13 +20,13 @@
 class Solution {
 public:
     vector<int> findSubstring(string S, vector<string> &L) {
-        int l_size = L.size();
+        int l_size = (int)L.size();
         if (l_size <= 0) {
             return vector<int>();
         }
         vector<int> result;
         map<string, int> word_count;
-        int word_size = L[0].size();
+        int word_size = (int)L[0].size();
         int i, j;
         for (i = 0; i < l_size; ++i) {
             ++word_count[L[i]];
