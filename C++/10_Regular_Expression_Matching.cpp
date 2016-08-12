@@ -1,6 +1,6 @@
 //
 // Created by lmb on 2016/2/22.
-// 1
+// 
 //
 //Implement regular expression matching with support for '.' and '*'.
 //'.' Matches any single character.
