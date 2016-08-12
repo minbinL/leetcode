@@ -37,7 +37,8 @@ public:
         ListNode *temp = pre->next;
         pre->next = pre->next->next;
         pre = dummy->next;
-        delete temp, dummy;
+        delete temp;
+        delete dummy;
         return pre;
     }
 };

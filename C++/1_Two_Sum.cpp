@@ -36,4 +36,15 @@ public:
         }
         return result;
     }
+
+    void static test()
+    {
+        Solution *s = new Solution();
+        vector<int> test_vec = vector<int> (10, 3);
+        vector<int> result = s->twoSum(test_vec, 6);
+        for (auto iter = result.begin(); iter != result.end(); ++iter)
+        {
+            cout << *iter << endl;
+        }
+    }
 };
