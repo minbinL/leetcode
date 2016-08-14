@@ -22,8 +22,7 @@ public:
 
         if (cur_sum == target)
         {
-            vector<int> tmp = cur_status;
-            result.push_back(tmp);
+            result.push_back(cur_status);
             return;
         }
 
