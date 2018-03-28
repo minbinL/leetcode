@@ -12,6 +12,8 @@
 //[1, 1, 6]
 //]
 
+#include "all_header.h"
+
 class Solution {
 public:
     void helper(vector<int>& candidates, int target, vector<int>& cur_state, int pos, int end, int sum, vector<vector<int>>& result) {

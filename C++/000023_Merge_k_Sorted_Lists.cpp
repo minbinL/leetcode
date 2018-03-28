@@ -23,7 +23,7 @@ public:
         if (len == 0) {
             return NULL;
         }
-        multiset<*ListNode, cmp> heap;
+        multiset<ListNode*, cmp> heap;
         for (int i = 0; i < len; i++) {
             if (lists[i] != NULL) {
                 heap.insert(lists[i]);
